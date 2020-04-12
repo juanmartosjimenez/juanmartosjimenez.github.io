@@ -1,0 +1,130 @@
+<!DOCTYPE>
+<html>
+    <head>
+        <style>
+body {
+    background-color: #0074D9;
+    overflow: visible;
+}
+* {
+    font-family: "Arial";
+    font-weight: 700;
+    border: none;
+    color: white;
+}
+
+#home {
+    position: absolute;
+    word-spacing: 2px;
+    font-size: 25px;
+    display: inline-block;
+    background: blue;
+    top: 2%;
+    padding: 1%;
+    border-radius: 5%/10%;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+#home #second {
+    word-spacing: 1px;
+    font-size: 20px;
+    text-align: center;
+}
+
+#projects {
+    position: absolute;
+    left: 5%;
+    right: 5%;
+    top: 150px;
+    height: auto;
+    padding-top: 2%;
+    padding-bottom: 2%;
+}
+
+.projectbox {
+    position: relative; 
+    width: 23%;
+    margin-top: 0.5%;
+    margin-bottom: 0.5%;
+    margin-left: 1%;
+    margin-right: 1%;
+    height: 70vh;
+    float: left;
+    display: inline-block;
+    background-color: #F25B3D;
+}
+.projectimage {
+    position: absolute;
+    height:50%;
+    top: 5%;
+    width: 90%;
+    left: 5%;
+}
+.projecttext {
+    position: absolute;
+    top: 60%;
+    width: auto;
+    text-align: center;
+    padding-left: 2%;
+    padding-right: 2%;
+}
+.buttongit{
+    position: relative;
+    background-color: black;
+    color: white;
+    width: 90%;
+    left: 5%;
+    top: 85%;
+    height: 10%;
+    font-size: 20px;
+    background-image: url('GitHub-Mark-Light-64px.png');
+    background-repeat: no-repeat;
+    background-position: 10%; 
+    background-size: 15%;
+    cursor:pointer;
+    
+}
+.buttongit:hover {
+    background: white;
+    background-image: url('GitHub-Mark-64px.png');
+    color: black;
+    background-repeat: no-repeat;
+    background-position: 10%; 
+    background-size: 15%;
+}
+        </style>
+        <button type="submit" id="home" onclick="window.location.href = 'index.html';" > Juan Martos
+            <div id="second">My Website</div>
+        </button>
+    </head>
+    <body>
+        <div style="text-align:center;"><a href="mailto:19martj@gmail.com " >test</a></div>
+        <div id="projects">
+            <div class="projectbox" id="project1">
+                <img class="projectimage" src="sheep.png" alt="End result"></img>
+            <p class="projecttext"> Word guessing game were sheep jump across the screen and the player has to type the word before it reaches the end</p>
+            <button type="submit" class="buttongit">Github</button>
+            </div >
+            <div class="projectbox" id="project2">
+                <img class="projectimage" src="brush.png" alt="End result"></img>
+            <p class="projecttext"> Word guessing game were sheep jump across the screen and the player has to type the word before it reaches the end</p>
+            <button type="submit" class="buttongit">Github</button>
+            </div>
+            <div class="projectbox" id="project3">
+                <img class="projectimage" src="www.png" alt="End result"></img>
+            <p class="projecttext"> Word guessing game were sheep jump across the screen and the player has to type the word before it reaches the end</p>
+            <button type="submit" class="buttongit">Github</button>
+            </div>
+            <div class="projectbox" id="project4" >
+                <img class="projectimage" src="robot.png" alt="End result"></img>
+            <p class="projecttext"> Word guessing game were sheep jump across the screen and the player has to type the word before it reaches the end</p>
+            <button type="submit" class="buttongit">Github</button>
+            </div>
+        </div>
+            <script>
+            </script>
+
+        </div>
+    </body>
+</html>
