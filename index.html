@@ -1,543 +1,561 @@
 <!DOCTYPE>
-<html>
+<html lang="en">
 
-    <head>
-        <style>
-body {
-    background-color: #0074D9;
-    color: white;
-    overflow: hidden;
-    margin: 0;
+<head>
+    <style>
+        body {
+            background-color: #5c80a7;
+            color: white;
+            overflow: hidden;
+            margin: 0;
 
-}
+        }
 
-* {
-    font-family: "Arial";
-    font-weight: 700;
-}
-
-      
-
-      #addon {
-          font-weight: 1000;
-          color: #fff;
-          transition: width 1s, background 1s, height 1s, top 0.5s, padding-right 1s;
-          position: absolute;
-          width: 53%;
-          bottom: 45%;
-          top: 142px;
-          left: 5%;
-          border-radius: 25% 60% 30% 30% / 60% 50% 40% 35%;
-
-      }
-
-      #addon #button0 {
-          font-weight: 700;
-          color: #fff;
-          transition: width 1s, background 1s, height 1s, top 0.5s, padding-right 1s, border-radius 0.5s, transform 0.5s;
-          font-size: 5vw;
-          background: #dd7c3c;
-          width: 100%;
-          height: 100%;
-          border-radius: 25% 60% 30% 30% / 60% 50% 40% 35%;
-          border: none;
-          cursor: pointer;
-
-      }
-
-      .buttonhover {
-          background-color: #E27D60;
-          border: none;
-          transition: 0s;
-          transition: border-radius 0.5s, transform 0.5s;
-      }
-
-      .buttontext {
-          position: relative;
-          z-index: 50;
-          top: 2vw;
-          font-size: 15px;
-          font-weight: 700;
-          color: #fff;
-      }
-
-      #button1 {
-          font-weight: 700;
-          transition: 0.5s; 
-          background: #41B3A3;
-          position: absolute;
-          right: 8%;
-          top: 142px;
-          color: #fff;
-          bottom: 10%;
-          width: 30%;
-          font-size: 35px;
-          border: none;
-          z-index: 50;
-          border: none;
-          opacity: 1;
-          border-radius: 65% 50% 65% 55% / 50% 50% 70% 60%;
-          text-align: center;
-          font-size: 5vw;
-      }
-      #home {
-          margin: 0px;
-          padding: 0px;
-          outline:none;
-          font-size: 3vw;
-          right: 0px;
-          top: 0px;
-          width: 57vw;
-          height: 12vh;
-          position: absolute;
-          clear: right;
-          float: right;
-          display: inline-block;
-      }
-      #home a {
-          text-decoration: none;
-          float: right;
-          width: 17vw;
-          height: auto;
-          text-align: center;
-          color: white;
-          padding: 1vw;
-          border: none;
-          cursor: pointer;
-          display:inline-block;
-      }
-
-      #name {
-        color: white;
-        font-size: 3vw;
-        width: 49vw;
-        height:12vh;
-        overflow: hidden;
-      }
-      #name  a{
-        padding: 1vw;
-        position: absolute;
-        text-decoration: none;
-        font-size:3vw;
-        color: white;
-        width: 50vw;
-        height: auto;
-        background: #2d1ff2;
-
-      }
-      #projects {
-          background: #dd7c3c;
-      }
-      #resume {
-          background: #b06980;
-      }
-      #contacth {
-          background: #41B3A3;
-      }
-
-      #contact {
-          position: relative;
-          margin: auto;
-          top: 45%;
-
-      }
-
-      #button1over {
-          position: relative;
-          top: 15%;
-          width: 90%;
-          height: 50%;
-          opacity: 0;
-          transition: opacity 0s;
-          margin: auto;
-          color: #fff;
-      }
-
-      #email {
-          position: relative;
-          width: 100%;
-          font-size: 3vw;
-          text-align: center;
-          height: 10%;
-          top: 0%;
-      }
-
-      #phone {
-          position: relative;
-          font-size: 3vw;
-          width: 100%;
-          text-align: center;
-          top: 50%;
-          height: 10%;
-      }
-
-      #copy {
-          position: relative;
-          height: 200%;
-          bottom: 100%;
-          font-size: 2vw;
-          width: 100%;
-          color: #fff;
-          background: none;
-          outline: none;
-          border: bold;
-          cursor: pointer;
-          transition: 0.5s;
-          font-weight: 700;
-      }
-
-      #copy2 {
-          position: relative;
-          font-size: 2vw;
-          font-weight: 700;
-          bottom: 100%;
-          height: 200%;
-          width: 100%;
-          color: #fff;
-          outline: none;
-          border: bold;
-          cursor: pointer;
-          transition: 0.5s;
-          background: none;
-      }
-
-      #button2 {
-          font-size: 5vw;
-          background: #b06980;
-          color: #fff;
-          position: absolute;
-          font-weight: 700;
-          left: 17%;
-          bottom: 10%;
-          top: 541px;
-          width: 41%;
-          border: none;
-          border: none;
-          cursor: pointer;
-          border-radius: 55% 35% 65% 50% / 65% 55% 80% 60%;
-          transition: transform 0.5s, border-radius 0.5s, top 0.5s, left 0.5s, background 0.5s;
-      }
-
-      #hovering {
-          position: absolute;
-          top: 142px;
-          left: 58%;
-          width: 36%;
-          bottom: 45%;
-          pointer-events: none;
-          opacity: 0;
-          transition: opacity 1s, border-radius 0.5s;
-          border-radius: 10%;
-
-      }
-
-      #backgroundcover {
-          position: absolute;
-          width: 100%;
-          height: 2%;
-          top: 49%;
-          background: #E27D60;
-      }
-
-      #topleft {
-          position: absolute;
-          cursor: pointer;
-          top: 0px;
-          width: 50%;
-          height: 50%;
-          background-image: url("robot.png");
-          background-repeat: no-repeat;
-          background-size: 25%;
-          background-position: 50% 20%;
-          border-radius: 40% 0% 0% 0%/60% 0% 0% 0%;
-          cursor: pointer;
-
-      }
-
-      #topright {
-          position: absolute;
-          top: 0px;
-          width: 50%;
-          height: 50%;
-          left: 50%;
-          background-image: url("sheep.png");
-          background-repeat: no-repeat;
-          background-size: 25%;
-          background-position: 45% 20%;
-          border-radius: 0% 15% 0% 0%/0% 30% 0% 0%;
-          cursor: pointer;
-      }
-
-      #bottomleft {
-          position: absolute;
-          top: 50%;
-          width: 50%;
-          height: 50%;
-          background-image: url("brush.png");
-          background-repeat: no-repeat;
-          background-size: 20%;
-          background-position: 50% 20%;
-          background-origin: border-box;
-          border-radius: 0% 0% 0% 40%/0% 0% 0% 60%;
-          cursor: pointer;
-      }
-
-      #bottomright {
-          position: absolute;
-          top: 50%;
-          width: 50%;
-          height: 50%;
-          left: 50%;
-          background-image: url("www.png");
-          background-repeat: no-repeat;
-          background-size: 20%;
-          background-position: 50% 20%;
-          border-radius: 0% 0% 15% 0%/0% 0% 30% 0%;
-          cursor: pointer;
-      }
+        * {
+            font-family: "Arial", serif;
+            font-weight: 700;
+        }
 
 
-      #addon:hover #button0 {
-          transform: scale(1.02);
-          transition: width 1s, background 1s, height 1s, top 0.5s, padding-right 1s, border-radius 0.5s, transform 0.5s;
-      }
+        #addon {
+            font-weight: 1000;
+            color: #ffffff;
+            transition: width 1s, background 1s, height 1s, top 0.5s, padding-right 1s;
+            position: absolute;
+            width: 53%;
+            bottom: 45%;
+            top: 142px;
+            left: 5%;
+            border-radius: 25% 60% 30% 30% / 60% 50% 40% 35%;
 
-      #addon:hover {
-          padding-right: 36%;
+        }
 
-      }
+        #addon #projectsButton {
+            font-weight: 700;
+            color: #fff;
+            transition: width 1s, background 1s, height 1s, top 0.5s, padding-right 1s, border-radius 0.5s, transform 0.5s;
+            font-size: 40px;
+            background: #03407b;
+            width: 100%;
+            height: 100%;
+            border-radius: 25% 60% 30% 30% / 60% 50% 40% 35%;
+            border: none;
+            cursor: pointer;
 
-      #addon:hover~#hovering {
-          pointer-events: auto;
-          opacity: 1;
-      }
+        }
 
-      #addon:hover~#hovering #topleft {
-          border-radius: 0%;
-      }
+        .projectsOnHover {
+            background-color: #E27D60;
+            border: none;
+            transition: 0s;
+            transition: border-radius 0.5s, transform 0.5s;
+        }
 
-      #addon:hover~#hovering #bottomleft {
-          border-radius: 0%;
-      }
+        .buttontext {
+            position: relative;
+            z-index: 50;
+            top: 2vw;
+            font-size: 15px;
+            font-weight: 700;
+            color: #fff;
+        }
 
-      #copy:hover {
-          background-color: #006666;
-      }
+        #contactButton {
+            font-weight: 700;
+            transition: 0.5s;
+            background: #03407b;
+            position: absolute;
+            right: 8%;
+            top: 142px;
+            color: #fff;
+            bottom: 10%;
+            width: 30%;
+            border: none;
+            z-index: 50;
+            border: none;
+            opacity: 1;
+            border-radius: 65% 50% 65% 55% / 50% 50% 70% 60%;
+            text-align: center;
+            font-size: 40px;
+        }
 
-      #copy2:hover {
-          background-color: #006666;
-      }
+        #home {
+            margin: 0;
+            padding: 0;
+            outline: none;
+            font-size: 20px;
+            right: 0;
+            top: 0;
+            width: 57vw;
+            height: 12vh;
+            position: absolute;
+            clear: right;
+            float: right;
+            display: inline-block;
+        }
+
+        #home a {
+            text-decoration: none;
+            float: right;
+            width: 17vw;
+            height: auto;
+            text-align: center;
+            color: white;
+            padding: 1vw;
+            border: none;
+            cursor: pointer;
+            display: inline-block;
+        }
+
+        #name {
+            color: white;
+            font-size: 3vw;
+            width: 49vw;
+            height: 12vh;
+            overflow: hidden;
+        }
+
+        #name a {
+            padding: 1vw;
+            position: absolute;
+            text-decoration: none;
+            font-size: 20px;
+            color: white;
+            width: 50vw;
+            height: auto;
+            background: #355c7b;
+
+        }
+
+        #projects {
+            background: #032f55;
+        }
+
+        #contacth {
+            background: #032f55;
+        }
+
+        #resume {
+            background: #032f55;
+        }
+
+        #contact {
+            position: relative;
+            margin: auto;
+            top: 45%;
+
+        }
+
+        #button1over {
+            position: relative;
+            top: 15%;
+            width: 90%;
+            height: 50%;
+            opacity: 0;
+            transition: opacity 0s;
+            margin: auto;
+            color: #fff;
+        }
+
+        #email {
+            position: relative;
+            width: 100%;
+            font-size: 1.5vw;
+            text-align: center;
+            height: 10%;
+            top: 0;
+        }
+
+        #phone {
+            position: relative;
+            font-size: 1.5vw;
+            width: 100%;
+            text-align: center;
+            top: 50%;
+            height: 10%;
+        }
+
+        #copy {
+            position: relative;
+            height: 200%;
+            bottom: 100%;
+            font-size: 2vw;
+            width: 100%;
+            color: #fff;
+            background: none;
+            outline: none;
+            cursor: pointer;
+            transition: 0.5s;
+            font-weight: 700;
+        }
+
+        #copy2 {
+            position: relative;
+            font-size: 2vw;
+            font-weight: 700;
+            bottom: 100%;
+            height: 200%;
+            width: 100%;
+            color: #fff;
+            outline: none;
+            cursor: pointer;
+            transition: 0.5s;
+            background: none;
+        }
+
+        #resumeButton {
+            font-size: 40px;
+            background: #03407b; /*#b06980;*/
+            color: #fff;
+            position: absolute;
+            font-weight: 700;
+            left: 17%;
+            bottom: 10%;
+            top: 460px;
+            width: 41%;
+            border: none;
+            border: none;
+            cursor: pointer;
+            border-radius: 55% 35% 65% 50% / 65% 55% 80% 60%;
+            transition: transform 0.5s, border-radius 0.5s, top 0s, left 0.5s, background 0.5s;
+        }
+
+        #projectsHovering {
+            position: absolute;
+            top: 142px;
+            left: 58%;
+            width: 36%;
+            bottom: 45%;
+            pointer-events: none;
+            opacity: 0;
+            transition: opacity 1s, border-radius 0.5s;
+            border-radius: 10%;
+
+        }
+
+        #projectsBackgroundCover {
+            position: absolute;
+            width: 100%;
+            height: 2%;
+            top: 49%;
+            background: #E27D60;
+        }
+
+        #projectsTopLeft {
+            position: absolute;
+            cursor: pointer;
+            top: 0;
+            width: 50%;
+            height: 50%;
+            background-image: url("robot.png");
+            background-repeat: no-repeat;
+            background-size: 25%;
+            background-position: 50% 20%;
+            border-radius: 40% 0 0 0/60% 0 0 0;
+            cursor: pointer;
+
+        }
+
+        #projectsTopRight {
+            position: absolute;
+            top: 0;
+            width: 50%;
+            height: 50%;
+            left: 50%;
+            background-image: url("sheep.png");
+            background-repeat: no-repeat;
+            background-size: 25%;
+            background-position: 45% 20%;
+            border-radius: 0 15% 0 0/0 30% 0 0;
+            cursor: pointer;
+        }
+
+        #projectsBottomLeft {
+            position: absolute;
+            top: 50%;
+            width: 50%;
+            height: 50%;
+            background-image: url("brush.png");
+            background-repeat: no-repeat;
+            background-size: 20%;
+            background-position: 50% 20%;
+            background-origin: border-box;
+            border-radius: 0 0 0 40%/0 0 0 60%;
+            cursor: pointer;
+        }
+
+        #projectsBottomRight {
+            position: absolute;
+            top: 50%;
+            width: 50%;
+            height: 50%;
+            left: 50%;
+            background-image: url("www.png");
+            background-repeat: no-repeat;
+            background-size: 20%;
+            background-position: 50% 20%;
+            border-radius: 0 0 15% 0/0 0 30% 0;
+            cursor: pointer;
+        }
 
 
-      #hovering:hover {
-          pointer-events: auto;
-          opacity: 1;
-      }
+        #addon:hover #projectsButton {
+            transform: scale(1.02);
+            transition: width 1s, background 1s, height 1s, top 0.5s, padding-right 1s, border-radius 0.5s, transform 0.5s;
+        }
 
-      #hovering:hover #bottomleft {
-          border-radius: 0% 0% 0% 0%;
-      }
+        #addon:hover {
+            padding-right: 36%;
 
-      #hovering:hover #topleft {
-          border-radius: 0% 0% 0% 0%;
-      }
+        }
 
-      #button1:hover {
-          background: #009999;
-          color: #009999;
-          transition: padding 0.2s, right 0.2s, height 0.2s, top 0.2s, background 0.5s, border-radius 0.5s, transform 0.5s;
-      }
+        #addon:hover ~ #projectsHovering {
+            pointer-events: auto;
+            opacity: 1;
+        }
 
-      #button1:hover #contact {
-          opacity: 0;
-      }
+        #addon:hover ~ #projectsHovering #projectsTopLeft {
+            border-radius: 0;
+        }
 
-      #button1:hover #button1over {
-          opacity: 1;
-          transition: 0.5s;
-      }
+        #addon:hover ~ #projectsHovering #projectsBottomLeft {
+            border-radius: 0;
+        }
 
-      #button2:hover {
-          transform: scale(1.02);
-          background: #86465a;
-      }
+        #copy:hover {
+            background-color: #15305e;
+        }
 
-      .buttonhover:hover {
+        #copy2:hover {
+            background-color: #15305e;
+        }
 
-          background-color: #F25B3D;
-          transform: scale(1.05);
-          z-index: 5;
-          border: bold;
-          transition: transform 1.0s, color 0.5s, z-index 0s, border-radius 0.5s, background-color 0.5s;
-      }
 
-      @media only screen and (max-height: 550px) {
-          body {
-              overflow: visible;
-          }
+        #projectsHovering:hover {
+            pointer-events: auto;
+            opacity: 1;
+        }
 
-          #addon {
-              top: 142px;
-              height: 200px;
-              transition: width 1s, background 1s, height 0s;
-          }
+        #projectsHovering:hover #projectsBottomLeft {
+            border-radius: 0 0 0 0;
+        }
 
-          #hovering {
-              top: 142px;
-              height: 200px;
-          }
+        #projectsHovering:hover #projectsTopLeft {
+            border-radius: 0 0 0 0;
+        }
 
-          #button2 {
-              top: 305px;
-              height: 200px;
-          }
+        #contactButton:hover {
+            background: #2e42a7;
+            color: #2e42a7;
+            transition: padding 0.2s, right 0.2s, height 0.2s, top 0.2s, background 0.5s, border-radius 0.5s, transform 0.5s;
+        }
 
-      }
+        #contactButton:hover #contact {
+            opacity: 0;
+        }
 
-        </style>
-        
-    </head>
+        #contactButton:hover #button1over {
+            opacity: 1;
+            transition: 0.5s;
+        }
 
-    <body>
-        <div id="name"><a href=".">Juan Martos</a></div>
-        <div id="home"> 
-            <a class="header" id="resume" type="submit" href="resume.html">Resume</a>
-            <a class="header" id="contacth" href="contact.html">Contact Me</a> 
-            <a class="header" id="projects" href="projects.html">Projects</a>
-        </div>
-        <div id="addon" onmouseover="modbutton0addon()" onmouseout="resetbutton0()">
-            <button type="submit" id="button0" onclick="window.location.href = 'projects.html';">Projects</button>
-        </div>
-        <div id="hovering" onmouseover="modbutton0hovering()" onmouseout="resetbutton0()">
-            <span id="backgroundcover"> </span>
-            <button class="buttonhover" type="button" id="topleft"><span class="buttontext">Robotic Arm</span></button>
-            <button class="buttonhover" type="button" id="topright"><span class="buttontext">Anomaly Detection</span></button>
-            <button class="buttonhover" type="button" id="bottomleft"><span class="buttontext">Flood It Game</span></button>
-            <button class="buttonhover" type="button" id="bottomright"><span class="buttontext">Hotel Web Scraper</span></button>
-        </div>
-        <div id="button1" onmouseover="modbutton1(this)" onmouseout="resetbutton1(this)">
-            <div id="contact">Contact Me </div>
-            <div id="button1over">
-                <div id="email"> <button type="button" id="copy" onclick="copied(this, 'Email')">Copy email</button><span id="emailtext">19martj@gmail.com</span></div>
-                <div id="phone"><button type="button" id="copy2" onclick="copied(this, 'Phone')">Copy phone</button><span id="phonetext">+1-857-930-1947</span></div>
-            </div>
-        </div>
-        <button type="button" id="button2" onmouseover="shiftbutton2(this)" onmouseout="resetbutton2(this)"><span>Resume</span></button>
-        <script language="JavaScript">
-            function copied(ele, text){
-                var email = document.getElementById('copy');
-                var phone = document.getElementById('copy2');
-                var msg = text.concat(" has been copied!");
-                if (text == "Email"){
+        #resumeButton:hover {
+            transform: scale(1.02);
+            background: #86465a;
+        }
 
-                    phone.innerHTML = "Copy phone";
-                    ele.innerHTML = msg; 
-                } else if (text == "Phone"){
+        .projectsOnHover:hover {
 
-                    email.innerHTML = "Copy email";
-                    ele.innerHTML = msg;
-                }
-            }
-            function modbutton0hovering() {
-                var ele = document.getElementById('button0').style;
-                ele.borderRadius = "5% 0% 0% 5% / 15% 0% 0% 15%";
-                ele.background = "#E27D60";
-                button1 = document.getElementById('button1');
-                button0 = document.getElementById('button0');
-                var button2height = button0.clientHeight + 180;
-                button1.style.top = button2height;
+            background-color: #F25B3D;
+            transform: scale(1.05);
+            z-index: 5;
+            transition: transform 1.0s, color 0.5s, z-index 0s, border-radius 0.5s, background-color 0.5s;
+        }
 
+        @media only screen and (max-height: 550px) {
+            body {
+                overflow: visible;
             }
 
-            function modbutton0addon() {
-                var ele = document.getElementById('button0').style;
-                ele.borderRadius = "5% 0% 0% 5% / 15% 0% 0% 15%";
-                ele.background = "#F25B3D";
-                ele.zIndex = "5";
-                button1 = document.getElementById('button1');
-                button0 = document.getElementById('button0');
-                var button2height = button0.clientHeight + 180;
-                button1.style.top = button2height;
+            #addon {
+                top: 142px;
+                height: 200px;
+                transition: width 1s, background 1s, height 0s;
             }
 
-            function resetbutton0() {
-                var ele = document.getElementById('button0').style;
-                ele.borderRadius = "7%/21%";
-                ele.background = "#dd7c3c";
-                ele.zIndex = "0";
-                button1 = document.getElementById('button1');
-                button1.style.top = "142px";
-
+            #projectsHovering {
+                top: 142px;
+                height: 200px;
             }
 
-            function modbutton1(ele) {
-                ele.style.paddingTop= "4px";
-                ele.style.paddingBottom= "4px";
-                ele.style.paddingRight= "0.2%";
-                ele.style.paddingLeft= "0.2%";
-                ele.style.top= "138px";
-                ele.style.right= "7.8%";
-                ele.style.borderRadius = "12.5%";
+            #resumeButton {
+                top: 305px;
+                height: 200px;
             }
 
-            function resetbutton1(ele) {
-                    ele.style.top = "142px";
-                    ele.style.right= "8%";
-                ele.style.padding = "0%";
-            }
+        }
 
-            function resetradius(ele) {
-                ele.style.borderRadius = "5% 5% 5% 5% / 10% 10% 10% 10%";
-            }
-            document.getElementById('copy').addEventListener("click", function() {
-                copyDivToClipboard("emailtext");
-            });
-            document.getElementById('copy2').addEventListener("click", function() {
-                copyDivToClipboard("phonetext");
-            });
+    </style>
+    <title></title>
 
-            function copyDivToClipboard(id) {
+</head>
 
-                var range = document.createRange();
-                range.selectNode(document.getElementById(id));
-                window.getSelection().removeAllRanges(); // clear current selection
-                window.getSelection().addRange(range); // to select text
-                document.execCommand("copy");
-                window.getSelection().removeAllRanges(); // to deselect
-            }
+<body>
+<div id="name"><a href=".">Juan Martos</a></div>
+<div id="home">
+    <a class="header" id="resume" type="submit" href="resume.html">Resume</a>
+    <a class="header" id="contacth" href="contact.html">Contact Me</a>
+    <a class="header" id="projects" href="projects.html">Projects</a>
+</div>
+<div id="addon" onmouseover="modProjectsHoverMenu()" onmouseout="resetProjectsButton()">
+    <button type="submit" id="projectsButton" onclick="window.location.href = 'projects.html';">Projects</button>
+</div>
+<div id="projectsHovering" onmouseover="modProjectsHover()" onmouseout="resetProjectsButton()">
+    <span id="projectsBackgroundCover"> </span>
+    <button class="projectsOnHover" type="button" id="projectsTopLeft"><span class="buttontext">Robotic Arm</span>
+    </button>
+    <button class="projectsOnHover" type="button" id="projectsTopRight"><span
+            class="buttontext">Anomaly Detection</span></button>
+    <button class="projectsOnHover" type="button" id="projectsBottomLeft"><span class="buttontext">Flood It Game</span>
+    </button>
+    <button class="projectsOnHover" type="button" id="projectsBottomRight"><span
+            class="buttontext">Hotel Web Scraper</span></button>
+</div>
+<div id="contactButton" onmouseover="modContactButton(this)" onmouseout="resetContactButton(this)">
+    <div id="contact">Contact Me</div>
+    <div id="button1over">
+        <div id="email">
+            <button type="button" id="copy" onclick="copied(this, 'Email')">Copy email</button>
+            <span id="emailtext">martosjimenez.j@northeastern.edu</span></div>
+        <div id="phone">
+            <button type="button" id="copy2" onclick="copied(this, 'Phone')">Copy phone</button>
+            <span id="phonetext">+1-857-930-1947</span></div>
+    </div>
+</div>
+<button type="button" id="resumeButton" onmouseover="modResumeButton(this.style)" onclick="window.location.href = 'resume.html';" onmouseout="resetbutton2(this)"><span>Resume</span>
+</button>
+<script>
+    function copied(ele, text) {
+        let email = document.getElementById('copy');
+        let phone = document.getElementById('copy2');
+        let msg = text.concat(" has been copied!");
+        if (text === "Email") {
 
-            function shiftbutton2(ele) {
-                ele.style.borderRadius = "10% 10% 10% 10% / 20% 20% 20% 20%";
-            }
-            function setelems(){
-                button2 = document.getElementById('button2');
-                home = document.getElementById('home');
-                button1 = document.getElementById('button1');
-                button0 = document.getElementById('button0');
-                var button2height = button0.clientHeight + 180;
-                if (window.innerHeight < 550) {
-                    button2.style.left = "17%";
-                    button2.style.top = button2height;
-                    button2.style.height = "120px";
-                    button1.style.top = "142px";
-                    button1.style.height ="356px";
-                    
+            phone.innerHTML = "Copy phone";
+            ele.innerHTML = msg;
+        } else if (text === "Phone") {
+
+            email.innerHTML = "Copy email";
+            ele.innerHTML = msg;
+        }
+    }
+
+    function modProjectsHover() {
+        const ele = document.getElementById('projectsButton').style;
+        ele.borderRadius = "5% 0% 0% 5% / 15% 0% 0% 15%";
+        ele.background = "#E27D60";
+        const button1 = document.getElementById('contactButton');
+        const button0 = document.getElementById('projectsButton');
+        let button2height = button0.clientHeight + 180;
+        button1.style.top = button2height;
+
+    }
+
+    function modProjectsHoverMenu() {
+        let ele = document.getElementById('projectsButton').style;
+        ele.borderRadius = "5% 0% 0% 5% / 15% 0% 0% 15%";
+        ele.background = "#F25B3D";
+        ele.zIndex = "5";
+        let button1 = document.getElementById('contactButton');
+        let button0 = document.getElementById('projectsButton');
+        let navContact = document.getElementById('projects');
+        navContact.style.background ="#E27D60";
+        let button2height = button0.clientHeight + 180;
+        button1.style.top = button2height.toString().concat('px');
+    }
+
+    function modResumeButton(ele) {
+        ele.borderRadius = "10% 10% 10% 10% / 20% 20% 20% 20%";
+        ele.background = "#86465a";
+        let navContact = document.getElementById('contacth');
+        navContact.style.background ="#86465a";
+    }
+
+    function resetProjectsButton() {
+        let ele = document.getElementById('projectsButton').style;
+        ele.borderRadius = "7%/21%";
+        ele.background = "#dd7c3c";
+        ele.zIndex = "0";
+        button1 = document.getElementById('contactButton');
+        button1.style.top = "142px";
+
+    }
+
+    function modContactButton(ele) {
+        ele.style.paddingTop = "4px";
+        ele.style.paddingBottom = "4px";
+        ele.style.paddingRight = "0.2%";
+        ele.style.paddingLeft = "0.2%";
+        ele.style.top = "138px";
+        ele.style.right = "7.8%";
+        ele.style.borderRadius = "12.5%";
+        ele.style.background = "#2e42a7";
+        let navContact = document.getElementById('resume');
+        navContact.style.background ="#2e42a7";
+    }
+
+    function resetContactButton(ele) {
+        ele.style.top = "142px";
+        ele.style.right = "8%";
+        ele.style.padding = "0%";
+    }
+
+    document.getElementById('copy').addEventListener("click", function () {
+        copyDivToClipboard("emailtext");
+    });
+    document.getElementById('copy2').addEventListener("click", function () {
+        copyDivToClipboard("phonetext");
+    });
+
+    function copyDivToClipboard(id) {
+
+        var range = document.createRange();
+        range.selectNode(document.getElementById(id));
+        window.getSelection().removeAllRanges(); // clear current selection
+        window.getSelection().addRange(range); // to select text
+        document.execCommand("copy");
+        window.getSelection().removeAllRanges(); // to deselect
+    }
+
+    function setelems() {
+        button2 = document.getElementById('resumeButton');
+        home = document.getElementById('home');
+        button1 = document.getElementById('contactButton');
+        button0 = document.getElementById('projectsButton');
+        var button2height = button0.clientHeight + 180;
+        if (window.innerHeight < 550) {
+            button2.style.left = "17%";
+            button2.style.top = button2height;
+            button2.style.height = "120px";
+            button1.style.top = "142px";
+            button1.style.height = "356px";
 
 
-                } else {
-                    button2.style.top = button2height;
-                    button2.style.left = "17%";
-                    button2.style.bottom = "10%";
-                    button2.style.height = "auto";
-                    button1.style.top = "142px";
-                    button1.style.height ="auto";
-                    button1.style.bottom = "10%";
-                }
-            }
-            window.onload = setelems();
-            window.addEventListener('resize', setelems);
-        </script>
+        } else {
+            button2.style.top = button2height;
+            button2.style.left = "17%";
+            button2.style.bottom = "10%";
+            button2.style.height = "auto";
+            button1.style.top = "142px";
+            button1.style.height = "auto";
+            button1.style.bottom = "10%";
+        }
+    }
 
-    </body>
+    window.onload = setelems();
+    window.addEventListener('resize', setelems);
+</script>
+
+</body>
 
 </html>
