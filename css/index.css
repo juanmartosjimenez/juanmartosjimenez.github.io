@@ -1,0 +1,391 @@
+body {
+    background-color: #5c80a7;
+    color: white;
+    overflow: hidden;
+    margin: 0;
+
+}
+
+* {
+    font-family: "Arial", serif;
+    font-weight: 700;
+}
+
+
+#addon {
+    font-weight: 1000;
+    color: #ffffff;
+    transition: width 1s, background 1s, height 1s, top 0.5s, padding-right 1s;
+    position: absolute;
+    width: 53%;
+    bottom: 45%;
+    top: 142px;
+    left: 5%;
+    border-radius: 25% 60% 30% 30% / 60% 50% 40% 35%;
+
+}
+
+#addon #projectsButton {
+    font-weight: 700;
+    color: #fff;
+    transition: width 1s, background 1s, height 1s, top 0.5s, padding-right 1s, border-radius 0.5s, transform 0.5s;
+    font-size: 40px;
+    background: #03407b;
+    width: 100%;
+    height: 100%;
+    border-radius: 25% 60% 30% 30% / 60% 50% 40% 35%;
+    border: none;
+    cursor: pointer;
+
+}
+
+.projectsOnHover {
+    background-color: #E27D60;
+    border: none;
+    transition: 0s;
+    transition: border-radius 0.5s, transform 0.5s;
+}
+
+.buttontext {
+    position: relative;
+    z-index: 50;
+    top: 2vw;
+    font-size: 15px;
+    font-weight: 700;
+    color: #fff;
+}
+
+#contactButton {
+    font-weight: 700;
+    transition: 0.5s;
+    background: #03407b;
+    position: absolute;
+    right: 8%;
+    top: 142px;
+    color: #fff;
+    bottom: 10%;
+    width: 30%;
+    border: none;
+    z-index: 50;
+    border: none;
+    opacity: 1;
+    border-radius: 65% 50% 65% 55% / 50% 50% 70% 60%;
+    text-align: center;
+    font-size: 40px;
+}
+
+#home {
+    margin: 0;
+    padding: 0;
+    outline: none;
+    font-size: 20px;
+    right: 0;
+    top: 0;
+    width: 57vw;
+    height: 12vh;
+    position: absolute;
+    clear: right;
+    float: right;
+    display: inline-block;
+}
+
+#home a {
+    text-decoration: none;
+    float: right;
+    width: 17vw;
+    height: auto;
+    text-align: center;
+    color: white;
+    padding: 1vw;
+    border: none;
+    cursor: pointer;
+    display: inline-block;
+}
+
+#name {
+    color: white;
+    font-size: 3vw;
+    width: 49vw;
+    height: 12vh;
+    overflow: hidden;
+}
+
+#name a {
+    padding: 1vw;
+    position: absolute;
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+    width: 50vw;
+    height: auto;
+    background: #355c7b;
+
+}
+
+#projects {
+    background: #032f55;
+}
+
+#contacth {
+    background: #032f55;
+}
+
+#resume {
+    background: #032f55;
+}
+
+#contact {
+    position: relative;
+    margin: auto;
+    top: 45%;
+
+}
+
+#button1over {
+    position: relative;
+    top: 15%;
+    width: 90%;
+    height: 50%;
+    opacity: 0;
+    transition: opacity 0s;
+    margin: auto;
+    color: #fff;
+}
+
+#email {
+    position: relative;
+    width: 100%;
+    font-size: 1.5vw;
+    text-align: center;
+    height: 10%;
+    top: 0;
+}
+
+#phone {
+    position: relative;
+    font-size: 1.5vw;
+    width: 100%;
+    text-align: center;
+    top: 50%;
+    height: 10%;
+}
+
+#copy {
+    position: relative;
+    height: 200%;
+    bottom: 100%;
+    font-size: 2vw;
+    width: 100%;
+    color: #fff;
+    background: none;
+    outline: none;
+    cursor: pointer;
+    transition: 0.5s;
+    font-weight: 700;
+}
+
+#copy2 {
+    position: relative;
+    font-size: 2vw;
+    font-weight: 700;
+    bottom: 100%;
+    height: 200%;
+    width: 100%;
+    color: #fff;
+    outline: none;
+    cursor: pointer;
+    transition: 0.5s;
+    background: none;
+}
+
+#resumeButton {
+    font-size: 40px;
+    background: #03407b; /*#b06980;*/
+    color: #fff;
+    position: absolute;
+    font-weight: 700;
+    left: 17%;
+    bottom: 10%;
+    top: 460px;
+    width: 41%;
+    border: none;
+    border: none;
+    cursor: pointer;
+    border-radius: 55% 35% 65% 50% / 65% 55% 80% 60%;
+    transition: transform 0.5s, border-radius 0.5s, top 0s, left 0.5s, background 0.5s;
+}
+
+#projectsHovering {
+    position: absolute;
+    top: 142px;
+    left: 58%;
+    width: 36%;
+    bottom: 45%;
+    pointer-events: none;
+    opacity: 0;
+    transition: opacity 1s, border-radius 0.5s;
+    border-radius: 10%;
+
+}
+
+#projectsBackgroundCover {
+    position: absolute;
+    width: 100%;
+    height: 2%;
+    top: 49%;
+    background: #E27D60;
+}
+
+#projectsTopLeft {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    width: 50%;
+    height: 50%;
+    background-image: url("../images/robot.png");
+    background-repeat: no-repeat;
+    background-size: 25%;
+    background-position: 50% 20%;
+    border-radius: 40% 0 0 0/60% 0 0 0;
+    cursor: pointer;
+
+}
+
+#projectsTopRight {
+    position: absolute;
+    top: 0;
+    width: 50%;
+    height: 50%;
+    left: 50%;
+    background-image: url("../images/sheep.png");
+    background-repeat: no-repeat;
+    background-size: 25%;
+    background-position: 45% 20%;
+    border-radius: 0 15% 0 0/0 30% 0 0;
+    cursor: pointer;
+}
+
+#projectsBottomLeft {
+    position: absolute;
+    top: 50%;
+    width: 50%;
+    height: 50%;
+    background-image: url("../images/brush.png");
+    background-repeat: no-repeat;
+    background-size: 20%;
+    background-position: 50% 20%;
+    background-origin: border-box;
+    border-radius: 0 0 0 40%/0 0 0 60%;
+    cursor: pointer;
+}
+
+#projectsBottomRight {
+    position: absolute;
+    top: 50%;
+    width: 50%;
+    height: 50%;
+    left: 50%;
+    background-image: url("../images/www.png");
+    background-repeat: no-repeat;
+    background-size: 20%;
+    background-position: 50% 20%;
+    border-radius: 0 0 15% 0/0 0 30% 0;
+    cursor: pointer;
+}
+
+
+#addon:hover #projectsButton {
+    transform: scale(1.02);
+    transition: width 1s, background 1s, height 1s, top 0.5s, padding-right 1s, border-radius 0.5s, transform 0.5s;
+}
+
+#addon:hover {
+    padding-right: 36%;
+
+}
+
+#addon:hover ~ #projectsHovering {
+    pointer-events: auto;
+    opacity: 1;
+}
+
+#addon:hover ~ #projectsHovering #projectsTopLeft {
+    border-radius: 0;
+}
+
+#addon:hover ~ #projectsHovering #projectsBottomLeft {
+    border-radius: 0;
+}
+
+#copy:hover {
+    background-color: #15305e;
+}
+
+#copy2:hover {
+    background-color: #15305e;
+}
+
+
+#projectsHovering:hover {
+    pointer-events: auto;
+    opacity: 1;
+}
+
+#projectsHovering:hover #projectsBottomLeft {
+    border-radius: 0 0 0 0;
+}
+
+#projectsHovering:hover #projectsTopLeft {
+    border-radius: 0 0 0 0;
+}
+
+#contactButton:hover {
+    background: #2e42a7;
+    color: #2e42a7;
+    transition: padding 0.2s, right 0.2s, height 0.2s, top 0.2s, background 0.5s, border-radius 0.5s, transform 0.5s;
+}
+
+#contactButton:hover #contact {
+    opacity: 0;
+}
+
+#contactButton:hover #button1over {
+    opacity: 1;
+    transition: 0.5s;
+}
+
+#resumeButton:hover {
+    transform: scale(1.02);
+    background: #86465a;
+}
+
+.projectsOnHover:hover {
+
+    background-color: #F25B3D;
+    transform: scale(1.05);
+    z-index: 5;
+    transition: transform 1.0s, color 0.5s, z-index 0s, border-radius 0.5s, background-color 0.5s;
+}
+
+@media only screen and (max-height: 550px) {
+    body {
+        overflow: visible;
+    }
+
+    #addon {
+        top: 142px;
+        height: 200px;
+        transition: width 1s, background 1s, height 0s;
+    }
+
+    #projectsHovering {
+        top: 142px;
+        height: 200px;
+    }
+
+    #resumeButton {
+        top: 305px;
+        height: 200px;
+    }
+
+}

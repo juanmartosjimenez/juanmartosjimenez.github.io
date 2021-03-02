@@ -1,0 +1,84 @@
+body {
+    background-color: #5c80a7;
+    color: white;
+    overflow: hidden;
+    margin: 0;
+
+}
+
+* {
+    font-family: "Arial", serif;
+    font-weight: 700;
+}
+
+#home {
+    margin: 0;
+    padding: 0;
+    outline: none;
+    font-size: 20px;
+    right: 0;
+    top: 0;
+    width: 57vw;
+    position: absolute;
+    clear: right;
+    float: right;
+    display: inline-block;
+}
+
+#home a {
+    text-decoration: none;
+    float: right;
+    width: 17vw;
+    text-align: center;
+    color: white;
+    padding: 1vw;
+    border: none;
+    cursor: pointer;
+    display: inline-block;
+}
+
+#name {
+    color: white;
+    font-size: 20px;
+    width: 49vw;
+    overflow: hidden;
+}
+
+#name a {
+    padding: 1vw;
+    position: absolute;
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+    width: 50vw;
+    height: auto;
+    background: #355c7b;
+
+}
+
+#projects {
+    background: #032f55;
+}
+
+#contacth {
+    background: #032f55;
+}
+
+#resume {
+    background:#86465a;
+}
+
+#contact {
+    position: relative;
+    margin: auto;
+    top: 45%;
+
+}
+
+#resumePDF {
+    position: absolute;
+    top: 60px;
+    margin-top: 0.5%;
+    height: 92%;
+    width: 100%;
+}

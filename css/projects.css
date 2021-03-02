@@ -1,0 +1,117 @@
+body {
+    background-color: #5c80a7;
+    color: white;
+    margin: 0;
+
+}
+
+* {
+    font-family: "Arial", serif;
+    font-weight: 700;
+}
+a{
+    color: white;
+    text-decoration: none;
+}
+#home {
+    margin: 0;
+    padding: 0;
+    outline: none;
+    font-size: 20px;
+    right: 0;
+    top: 0;
+    width: 57vw;
+    position: absolute;
+    clear: right;
+    float: right;
+    display: inline-block;
+}
+
+#home a {
+    text-decoration: none;
+    float: right;
+    width: 17vw;
+    text-align: center;
+    color: white;
+    padding: 1vw;
+    border: none;
+    cursor: pointer;
+    display: inline-block;
+}
+
+#name {
+    color: white;
+    font-size: 20px;
+    width: 49vw;
+    overflow: hidden;
+}
+
+#name a {
+    padding: 1vw;
+    position: absolute;
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+    width: 50vw;
+    height: auto;
+    background: #355c7b;
+
+}
+
+#projects {
+    background: #E27D60;
+}
+
+#contacth {
+    background: #032f55;
+}
+
+#resume {
+    background:#032f55;
+}
+
+#contact {
+    position: relative;
+    margin: auto;
+    top: 45%;
+
+}
+
+#projectDir {
+    position: absolute;
+    left: 5%;
+    right: 5%;
+    top: 100px;
+    height: auto;
+    text-align: center;
+    border-radius: 2%;
+    margin-bottom: 100px;
+}
+
+.projectSub {
+    display: inline-block;
+    border: solid #032f55 6px;
+    margin: 10px;
+    background-color: #355c7b;
+    padding-bottom: 10px;
+    border-radius: 10px;
+    width:90%;
+
+}
+
+.buttongit{
+    position: relative;
+    background-color: black;
+    color: white;
+    background-image: url('../images/GitHub-Mark-Light-64px.png');
+    background-repeat: no-repeat;
+    background-position: 15%;
+    background-size: 50%;
+    cursor:pointer;
+}
+
+.buttongit:hover {
+    color: black;
+    background: white url('../images/GitHub-Mark-64px.png') no-repeat 10%;
+    background-size: 50%;
+}
