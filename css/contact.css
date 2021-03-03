@@ -72,6 +72,29 @@ body {
     position: relative;
     margin: auto;
     top: 45%;
-
 }
+
+#projectDir {
+    position: absolute;
+    left: 5%;
+    right: 5%;
+    top: 100px;
+    height: auto;
+    text-align: center;
+    border-radius: 2%;
+    margin-bottom: 100px;
+}
+
+.projectSub {
+    display: inline-block;
+    border: solid #032f55 6px;
+    margin: 10px;
+    background-color: #355c7b;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    border-radius: 10px;
+    width: 90%;
+}
+
 

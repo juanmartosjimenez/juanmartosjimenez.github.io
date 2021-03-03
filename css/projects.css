@@ -65,7 +65,7 @@ body {
 }
 
 #resume {
-    background:#032f55;
+    background: #032f55;
 }
 
 #contact {
@@ -95,14 +95,14 @@ body {
     padding-right: 10px;
     padding-bottom: 10px;
     border-radius: 10px;
-    width:90%;
-
+    width: 90%;
 }
 
-.buttongit{
+.buttongit {
     position: absolute;
     padding-left: 5%;
 }
+
 .textentry {
     text-align: left;
 }

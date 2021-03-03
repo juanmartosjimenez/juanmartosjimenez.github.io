@@ -18,13 +18,18 @@
 </div>
 <div id="projectsHovering" onmouseover="modProjectsHover()" onmouseout="resetProjectsButton()">
     <span id="projectsBackgroundCover"> </span>
-    <button class="projectsOnHover" type="button" id="projectsTopLeft"><span class="buttontext">Robotic Arm</span>
+    <button class="projectsOnHover" type="button" id="projectsTopLeft"
+            onclick="window.location.href = 'projects.html#wiimote';"><span class="buttontext">Robotic Arm</span>
     </button>
-    <button class="projectsOnHover" type="button" id="projectsTopRight"><span
+    <button class="projectsOnHover" type="button" id="projectsTopRight"
+            onclick="window.location.href = 'projects.html#anomaly-detect';"><span
             class="buttontext">Anomaly Detection</span></button>
-    <button class="projectsOnHover" type="button" id="projectsBottomLeft"><span class="buttontext">Flood It Game</span>
+    <button class="projectsOnHover" type="button" id="projectsBottomLeft"
+            onclick="window.location.href = 'projects.html#file-system';"><span
+            class="buttontext">EXT File System</span>
     </button>
-    <button class="projectsOnHover" type="button" id="projectsBottomRight"><span
+    <button class="projectsOnHover" type="button" id="projectsBottomRight"
+            onclick="window.location.href = 'projects.html#web-scraper';"><span
             class="buttontext">Hotel Web Scraper</span></button>
 </div>
 <div id="contactButton" onmouseover="modContactButton(this)" onmouseout="resetContactButton(this)">
@@ -38,7 +43,8 @@
             <span id="phonetext">+1-857-930-1947</span></div>
     </div>
 </div>
-<button type="button" id="resumeButton" onmouseover="modResumeButton(this.style)" onclick="window.location.href = 'resume.html';" onmouseout="resetbutton2(this)"><span>Resume</span>
+<button type="button" id="resumeButton" onmouseover="modResumeButton(this.style)"
+        onclick="window.location.href = 'resume.html';" onmouseout="resetbutton2(this)"><span>Resume</span>
 </button>
 <script>
     function copied(ele, text) {
@@ -75,7 +81,7 @@
         let button1 = document.getElementById('contactButton');
         let button0 = document.getElementById('projectsButton');
         let navContact = document.getElementById('projects');
-        navContact.style.background ="#E27D60";
+        navContact.style.background = "#E27D60";
         let button2height = button0.clientHeight + 180;
         button1.style.top = button2height.toString().concat('px');
     }
@@ -84,7 +90,7 @@
         ele.borderRadius = "10% 10% 10% 10% / 20% 20% 20% 20%";
         ele.background = "#86465a";
         let navContact = document.getElementById('resume');
-        navContact.style.background ="#86465a";
+        navContact.style.background = "#86465a";
     }
 
     function resetProjectsButton() {
@@ -107,7 +113,7 @@
         ele.style.borderRadius = "12.5%";
         ele.style.background = "#2e42a7";
         let navContact = document.getElementById('contacth');
-        navContact.style.background ="#2e42a7";
+        navContact.style.background = "#2e42a7";
     }
 
     function resetContactButton(ele) {

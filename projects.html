@@ -17,47 +17,72 @@
         <h2>Rentmate</h2>
         <span>Working on startup Rentmate, have currently designed backend hapi.js framework. Planning to develop the frontend.</span>
     </div>
-    <div class="projectSub">
-        <h2>Unir Anomaly Detection System <span class="buttongit"><a  class="github-button" href="https://github.com/juanmartosjimenez/anomaly_detect_bot" data-size="large">GitHub</a></span></h2>
-
-        <div class="textentry">
-        <div>Developed an anomaly detection system that periodically looks at logs to determine if there is any unexpected behaviour in the
-            incoming http requests and responses.
-            If any unexpected behaviour is found, the bot sends out a message with detailed information regarding the detected anomaly.</div>
-        <br />
-        <div>The bot was able to detect most issues before they were detected by a developer or reported by a client. One time, a site was linked as xxx.htm however the correct site was xxx.html,
-        the bot was able to immediately detect around 200 404 responses and the issue was fixed promptly. Without the bot, the issue would have persisted much longer and would have affected many more users. Overall, the bot is very effective at quickly reporting problems and minimizing the time to the find the source of the problem.</div>
-        <br />
-        <div>The image below shows the sample message when an anomaly is detected. In the first message the ip 10.10.10.10 has made 23 requests for the request apilms.unir.net/xxx
-        with a unique ip count of 1 meaning that 10.10.10.10 is the only ip that has made this request with a response 500 in the last 5 minutes. <br /><br/>
-        The next message with the site masterclass.unir.net has a response 401 with 16 unique users making that request in the past 5 minutes. </div>
-        <br/>
-        <div>The software compares the data at a given time interval to the data of a given time interval 7 days ago, 14 days ago and 21 days ago, and uses the rolling mean to determine if it is an anomaly.
-        A sudden spike in responses that exceeds the upper bound of the rolling mean suggests there is an anomaly and reports it via the bot.</div>
-        <br />
-        </div>
-        <div>
-        <img src="project-images/anomaly-detect/anomaly-detect.png" width="400">
-        </div>
-        <br />
-        <div class="textentry">This project was written in python and relies heavily on Pandas to carry out periodic anomaly detection. The data from the logs is gathered using the Elasticsearch API, in order minimize the data being requested, the data is cached every time the program runs so it can be reused later for anomaly detection.</div>
-        <br/>
-    </div>
-    <div class="projectSub">
-        <h2>Web Scraper <span class="buttongit"><a  class="github-button" href="https://github.com/juanmartosjimenez/webscraper" data-size="large">GitHub</a></span></h2>
-        <div>
-            <div class="textentry">
-                Developed a web scraper that scrapes Tripadvisor and Booking.com for the hotel name, price and rating of hotels in a given area. The project runs on a Flask Framework, the screenshots below demonstrate the frontend.
-                The backend uses Selenium to scrape the data and Pandas to generate the graphs. The software was used by Fuengirola Beach Hotel to asses their market position. Apart from being useful to hotel managers it is also very useful as a tool to find hotels at a good price range with a good rating. At one point I gave the software a list of cities and scraped data for days straight until I had millions of entries and was able to analyze that data using Pandas, there were lots of interesting observations to be made like what the average rating per city was, the average price per city, the cheapest hotel in any given city etc.
+    <div id="anomaly-detect" class="projectSub">
+        <h2>Unir Anomaly Detection System <span class="buttongit"><a class="github-button"
+                                                                     href="https://github.com/juanmartosjimenez/anomaly_detect_bot"
+                                                                     data-size="large">GitHub</a></span></h2>
+            <div class="textentry">Developed an anomaly detection system that periodically looks at logs to determine if there is any
+                unexpected behaviour in the
+                incoming HTTP requests and responses.
+                The software compares the data at a given time interval to the data of a given time interval 7 days ago,
+                14 days ago and 21 days ago, and uses the rolling mean to determine if it is an anomaly.
+                A sudden spike in responses that exceeds the upper bound of the rolling mean suggests there is an
+                anomaly and reports it via the bot.
+                If any unexpected behaviour is found, the bot sends out a message with detailed information regarding
+                the detected anomaly.
+                <br/>
+                The bot was able to detect most issues before they were detected by a developer or reported by a
+                    client. One time, a site was linked as xxx.htm however the correct spelling was xxx.html,
+                    the bot was able to immediately detect around 200 404 responses and the issue was fixed promptly.
+                    Without the bot, the issue would have persisted much longer and would have affected many more users.
+                    Overall, the bot is very effective at quickly reporting problems and minimizing the time to the find
+                    the source of the problem.
+                <br/>
+                <br/>
+                The image below shows the messages reported when an anomaly is detected.
+                <br/>
+                <br/>
+            </div>
+            <div>
+                <img src="project-images/anomaly-detect/anomaly-detect.png" width="400">
             </div>
             <br/>
-            <div class="textentry">The screenshot below shows the home screen, it accepts a city name, check in and check out dates.
-                Additionally, in order to highlight a specific hotel in the graphs that are generated, the user should pass the name of the hotel as it appears in Booking.com and as it appears in Tripadvisor.</div>
+            <div class="textentry">This project was written in python and relies heavily on Pandas to carry out periodic
+                anomaly detection. The data from the logs is gathered using the Elasticsearch API, in order minimize the
+                data being requested, the data is cached every time the program runs so it can be reused later for
+                anomaly detection.
+            </div>
+            <br/>
+    </div>
+    <div id="web-scraper" class="projectSub">
+        <h2>Web Scraper <span class="buttongit"><a class="github-button"
+                                                   href="https://github.com/juanmartosjimenez/webscraper"
+                                                   data-size="large">GitHub</a></span></h2>
+        <div>
+            <div class="textentry">
+                Developed a web scraper that scrapes Tripadvisor and Booking.com for the hotel name, price and rating of
+                hotels in a given area. The project runs on a Flask Framework, the screenshots below demonstrate the
+                frontend.
+                The backend uses Selenium to scrape the data and Pandas to generate the graphs. The software was used by
+                Fuengirola Beach Hotel to asses their market position. Apart from being useful to hotel managers it is
+                also very useful as a tool to find hotels at a good price range with a good rating. At one point I gave
+                the software a list of cities and scraped data for days straight until I had millions of entries and was
+                able to analyze that data using Pandas, there were lots of interesting observations to be made like what
+                the average rating per city was, the average price per city, the cheapest hotel in any given city etc.
+            </div>
+            <br/>
+            <div class="textentry">The screenshot below shows the home screen, it accepts a city name, check in and
+                check out dates.
+                Additionally, in order to highlight a specific hotel in the graphs that are generated, the user should
+                pass the name of the hotel as it appears in Booking.com and as it appears in Tripadvisor.
+            </div>
             <br/>
             <div><img src="project-images/webscraper/homescreen.png" width=80%></div>
             <br/>
             <div class="textentry">
-                The screenshot below shows the graphs generated after scraping the data. The blue dots represent the hotels, the two hotels highlighted in the graphs are those requested by the user, the y axis is the rating and the x axis is the price.
+                The screenshot below shows the graphs generated after scraping the data. The blue dots represent the
+                hotels, the two hotels highlighted in the graphs are those requested by the user, the y axis is the
+                rating and the x axis is the price.
             </div>
             <br/>
             <div><img src="project-images/webscraper/webscraperresult.png" width=80%></div>
@@ -65,12 +90,17 @@
         </div>
 
     </div>
-    <div class="projectSub">
-        <h2>Wiimote Robot Arm  <span class="buttongit"><a  class="github-button" href="https://github.com/juanmartosjimenez/wii-robot" data-size="large">GitHub</a></span></h2>
+    <div id="wiimote" class="projectSub">
+        <h2>Wiimote Robot Arm <span class="buttongit"><a class="github-button"
+                                                         href="https://github.com/juanmartosjimenez/wii-robot"
+                                                         data-size="large">GitHub</a></span></h2>
         <div>
             <div class="textentry">
-                Programmed FPGA to map inputs to the Servo Motors in robotic arm using Simulink, wrote C++ code to move the Servo Motors and connected to the Wiimote through Bluetooth.
-                For a video demo <a href="https://drive.google.com/drive/folders/1KUVKmdNBJBE7JedR6JRu3OtwJF4h8Qtp?usp=sharing" target="_blank">click here.</a>
+                Programmed FPGA to map inputs to the Servo Motors in robotic arm using Simulink, wrote C++ code to move
+                the Servo Motors and connected to the Wiimote through Bluetooth.
+                For a video demo <a
+                    href="https://drive.google.com/drive/folders/1KUVKmdNBJBE7JedR6JRu3OtwJF4h8Qtp?usp=sharing"
+                    target="_blank">click here.</a>
                 The image below shows the robotic arm and the Wiimote used to control it.
             </div>
             <br/>
@@ -80,44 +110,81 @@
         </div>
     </div>
 
-    <div class="projectSub">
-        <h2>Pyramid Solitaire <span class="buttongit"> <a class="github-button" href="https://github.com/juanmartosjimenez/pyramidsolitaire/" data-size="large">GitHub</a></span></h2>
-        <div class="textentry">Programmed Pyramid Solitaire game using object oriented programming and the model, controller and view design pattern. Focused on abstraction, avoiding code duplication, handling edge cases and adhering to the design pattern.</div>
+    <div id="pyramid-solitaire" class="projectSub">
+        <h2>Pyramid Solitaire <span class="buttongit"> <a class="github-button"
+                                                          href="https://github.com/juanmartosjimenez/pyramidsolitaire/"
+                                                          data-size="large">GitHub</a></span></h2>
+        <div class="textentry">Programmed Pyramid Solitaire game using object oriented programming and the model,
+            controller and view design pattern. Focused on abstraction, avoiding code duplication, handling edge cases
+            and adhering to the design pattern.
+        </div>
         <br/>
-        <div class="textentry">The screenshot below shows an example walk through of the game. The game also supports multiple functionalities like different pyramid size and game modes.</div>
+        <div class="textentry">The screenshot below shows an example walk through of the game. The game also supports
+            multiple functionalities like different pyramid size and game modes.
+        </div>
         <br/>
         <div><img src="project-images/pyramidsolitaire/pyramidsolitaire3.png"></div>
 
 
     </div>
-    <div class="projectSub">
-        <h2>Memory Allocator<span class="buttongit"> <a class="github-button" href="https://github.com/juanmartosjimenez//" data-size="large">GitHub</a></span></h2>
-        <a class="github-button" href="https://github.com/MemoryAllocator">GitHub</a>
-    </div>
-    <div class="projectSub">
-        <h2>File System</h2>
-        <a class="github-button" href="https://github.com/MemoryAllocator">GitHub</a>
-    </div>
-    <a href="projects/flooditgame.html">
-        <div class="projectSub">
-            <h2>FloodIt game</h2>
-            <a class="github-button" href="https://github.com/java">GitHub</a>
+    <div id="memory-allocator" class="projectSub">
+        <h2>Memory Allocator<span class="buttongit"> <a class="github-button"
+                                                        href="https://github.com/juanmartosjimenez/memoryallocator/"
+                                                        data-size="large">GitHub</a></span></h2>
+        <div class="textentry">Programmed an implementation of Linux malloc, realloc and free in C. Used mmap to give
+            the user requested memory. The purpose of this memory allocator was to primarily allocate smaller slots of
+            memory, in order to optimize this I used bucket sorting and memory allocations that increase in powers of 2.
+            So if the user initially requests 10 bytes, the malloc function will return a 16 byte slot to the user.
+            Whenever a bucket is filled for a given power of 2, a new bucket is created of size 4096 bytes or a page
+            table, this reduces the number of system calls and in turn optimized the memory allocation process. For
+            bigger memory allocations the program was not very optimized. The program was also thread safe and compared
+            to a more naive malloc implementation it performed very well. The image below shows the benchmark test
+            performed for two programs ivec and list, hwx is a naive implementation of malloc and opt is the optimized
+            version of malloc. The optimized malloc was considerably faster for both programs.
         </div>
-    </a>
-    <a href="projects/single-cycle-datapath.html">
-    <div class="projectSub">
-        <h2>Single Cycle Datapath</h2>
-        <a class="github-button" href="https://github.com/ntkme" data-size="large">GitHub</a>
+        <div style="font-family: monospace; white-space: pre;">
+            +-----+-------------+--------------+
+            |     | ivec 12,000 | list 210,000 |
+            +-----+-------------+--------------+
+            | hwx | 8.50s       | 7.18s        |
+            | opt | 0.23s       | 2.32s        |
+            +-----+-------------+--------------+
+        </div>
     </div>
-    </a>
-    <a href="projects/sheep-game.html">
-    <div class="projectSub">
-        <h2>Sheep game</h2>
-        <a class="github-button" href="https://github.com/ntkme">GitHub</a>
+    <div id="file-system" class="projectSub">
+        <h2>File System<span class="buttongit"> <a class="github-button"
+                                                   href="https://github.com/juanmartosjimenez/filesystem/"
+                                                   data-size="large">GitHub</a></span></h2>
+        <div class="textentry">Programmed a simple EXT linux filesystem in C using FUSE and interface that lets users
+            create their own file systems. The screenshots below show the basic functionality of the program capable of
+            making files, directories and navigating through the filesystem.
+        </div>
+        <br/>
+        <div class="textentry">The image below shows the system calls made to FUSE whenever the user runs commands in
+            the filesystem.
+        </div>
+        <br/>
+        <div><img src="project-images/computersystems/filesystem1.png" width="50%"></div>
+        <br/>
+        <div class="textentry">The image below shows an example usage of the filesystem.</div>
+        <br/>
+        <div><img src="project-images/computersystems/filesystem2.png" width="60%"></div>
+
     </div>
-    </a>
+    <div id="floodit" class="projectSub">
+        <h2>FloodIt game<span class="buttongit"> <a class="github-button"
+                                                    href="https://github.com/juanmartosjimenez/floodit/"
+                                                    data-size="large">GitHub</a></span></h2>
+        <div class="textentry"> Pair programmed FloodIt game in java. The screenshot below shows a sample of the game,
+            for a video demo <a
+                    href="https://drive.google.com/drive/folders/1SDBFRrp2lw5X1SQT7CvuJYrP9YW2qn99?usp=sharing"
+                    target="_blank">click here.</a>
+            The game also supports different board sizes and difficulties.
+        </div>
+        <br/>
+        <div><img src="project-images/floodit/floodit.png" width="10%"></div>
+    </div>
 </div>
-<div> spacer</div>
 <script>
 </script>
 </body>
