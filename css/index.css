@@ -242,7 +242,7 @@ body {
     top: 0;
     width: 50%;
     height: 50%;
-    background-image: url("../images/robot.png");
+    background-image: url("../icons/robot.png");
     background-repeat: no-repeat;
     background-size: 25%;
     background-position: 50% 20%;
@@ -257,7 +257,7 @@ body {
     width: 50%;
     height: 50%;
     left: 50%;
-    background-image: url("../images/sheep.png");
+    background-image: url("../icons/sheep.png");
     background-repeat: no-repeat;
     background-size: 25%;
     background-position: 45% 20%;
@@ -270,7 +270,7 @@ body {
     top: 50%;
     width: 50%;
     height: 50%;
-    background-image: url("../images/brush.png");
+    background-image: url("../icons/brush.png");
     background-repeat: no-repeat;
     background-size: 20%;
     background-position: 50% 20%;
@@ -285,7 +285,7 @@ body {
     width: 50%;
     height: 50%;
     left: 50%;
-    background-image: url("../images/www.png");
+    background-image: url("../icons/www.png");
     background-repeat: no-repeat;
     background-size: 20%;
     background-position: 50% 20%;

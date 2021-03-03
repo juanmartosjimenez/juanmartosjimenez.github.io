@@ -9,10 +9,8 @@ body {
     font-family: "Arial", serif;
     font-weight: 700;
 }
-a{
-    color: white;
-    text-decoration: none;
-}
+
+
 #home {
     margin: 0;
     padding: 0;
@@ -93,6 +91,8 @@ a{
     border: solid #032f55 6px;
     margin: 10px;
     background-color: #355c7b;
+    padding-left: 10px;
+    padding-right: 10px;
     padding-bottom: 10px;
     border-radius: 10px;
     width:90%;
@@ -100,18 +100,9 @@ a{
 }
 
 .buttongit{
-    position: relative;
-    background-color: black;
-    color: white;
-    background-image: url('../images/GitHub-Mark-Light-64px.png');
-    background-repeat: no-repeat;
-    background-position: 15%;
-    background-size: 50%;
-    cursor:pointer;
+    position: absolute;
+    padding-left: 5%;
 }
-
-.buttongit:hover {
-    color: black;
-    background: white url('../images/GitHub-Mark-64px.png') no-repeat 10%;
-    background-size: 50%;
+.textentry {
+    text-align: left;
 }
