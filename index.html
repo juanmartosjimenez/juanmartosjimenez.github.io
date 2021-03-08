@@ -44,9 +44,16 @@
     </div>
 </div>
 <button type="button" id="resumeButton" onmouseover="modResumeButton(this.style)"
-        onclick="window.location.href = 'resume.html';" onmouseout="resetbutton2(this)"><span>Resume</span>
+        onclick="window.location.href = 'resume.html';" onmouseout="resetResume(this.style)"><span>Resume</span>
 </button>
 <script>
+
+    function resetResume(ele){
+        ele.background = "#aa5050";
+        ele.transform = "scale(1.0)";
+
+    }
+
     function copied(ele, text) {
         let email = document.getElementById('copy');
         let phone = document.getElementById('copy2');
@@ -65,7 +72,7 @@
     function modProjectsHover() {
         const ele = document.getElementById('projectsButton').style;
         ele.borderRadius = "5% 0% 0% 5% / 15% 0% 0% 15%";
-        ele.background = "#E27D60";
+        ele.background = "#78a38c";
         const button1 = document.getElementById('contactButton');
         const button0 = document.getElementById('projectsButton');
         let button2height = button0.clientHeight + 180;
@@ -76,27 +83,27 @@
     function modProjectsHoverMenu() {
         let ele = document.getElementById('projectsButton').style;
         ele.borderRadius = "5% 0% 0% 5% / 15% 0% 0% 15%";
-        ele.background = "#F25B3D";
+        ele.background = "#579375";
         ele.zIndex = "5";
         let button1 = document.getElementById('contactButton');
         let button0 = document.getElementById('projectsButton');
         let navContact = document.getElementById('projects');
-        navContact.style.background = "#E27D60";
+        navContact.style.background = "#78a38c";
         let button2height = button0.clientHeight + 180;
         button1.style.top = button2height.toString().concat('px');
     }
-
     function modResumeButton(ele) {
-        ele.borderRadius = "10% 10% 10% 10% / 20% 20% 20% 20%";
-        ele.background = "#86465a";
+        ele.borderRadius = "10% / 20%";
+        ele.transform = "scale(1.04)";
+        ele.background = "#aa3232";
         let navContact = document.getElementById('resume');
-        navContact.style.background = "#86465a";
+        navContact.style.background = "#aa5050";
     }
 
     function resetProjectsButton() {
         let ele = document.getElementById('projectsButton').style;
         ele.borderRadius = "7%/21%";
-        ele.background = "#E27D60";
+        ele.background = "#78a38c";
         ele.zIndex = "0";
         button1 = document.getElementById('contactButton');
         button1.style.top = "142px";
@@ -113,10 +120,12 @@
         ele.style.borderRadius = "12.5%";
         ele.style.background = "#2e42a7";
         let navContact = document.getElementById('contacth');
-        navContact.style.background = "#2e42a7";
+        navContact.style.background = "#5464c1";
     }
 
     function resetContactButton(ele) {
+
+        ele.style.background = "#5464c1";
         ele.style.top = "142px";
         ele.style.right = "8%";
         ele.style.padding = "0%";
